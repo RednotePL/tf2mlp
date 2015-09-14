@@ -1,4 +1,7 @@
 ﻿Public Class MainMenu
+
+
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FullInstallBtn.Checked = True
     End Sub
@@ -40,6 +43,12 @@
 
     Public Sub FullInstall()
 
+        'pi.Arguments = "https://github.com/SuperStarPL/tf2mlp/raw/master/sspl_mlp_dir.vpk"
+
+        Dim pi As New ProcessStartInfo("wget.exe", "https://github.com/SuperStarPL/tf2mlp/raw/master/sspl_mlp_dir.vpk --no-check-certificate")
+        Process.Start(pi)
+
+        'Process.Start(Application.StartupPath & "wget.exe", "") As Process
     End Sub
 
     Public Sub MinimalInstall()
