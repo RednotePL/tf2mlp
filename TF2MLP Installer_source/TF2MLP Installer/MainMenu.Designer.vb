@@ -38,7 +38,7 @@ Partial Class MainMenu
         'FullInstallBtn
         '
         Me.FullInstallBtn.AutoSize = True
-        Me.FullInstallBtn.Location = New System.Drawing.Point(6, 16)
+        Me.FullInstallBtn.Location = New System.Drawing.Point(6, 20)
         Me.FullInstallBtn.Name = "FullInstallBtn"
         Me.FullInstallBtn.Size = New System.Drawing.Size(125, 17)
         Me.FullInstallBtn.TabIndex = 0
@@ -48,7 +48,7 @@ Partial Class MainMenu
         'MinimalInstallBtn
         '
         Me.MinimalInstallBtn.AutoSize = True
-        Me.MinimalInstallBtn.Location = New System.Drawing.Point(6, 39)
+        Me.MinimalInstallBtn.Location = New System.Drawing.Point(6, 38)
         Me.MinimalInstallBtn.Name = "MinimalInstallBtn"
         Me.MinimalInstallBtn.Size = New System.Drawing.Size(167, 17)
         Me.MinimalInstallBtn.TabIndex = 2
@@ -61,7 +61,7 @@ Partial Class MainMenu
         Me.GroupBox1.Controls.Add(Me.FullInstallBtn)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 41)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(307, 61)
+        Me.GroupBox1.Size = New System.Drawing.Size(307, 67)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Select Installation:"
@@ -109,10 +109,10 @@ Partial Class MainMenu
         'ButtonInstall
         '
         Me.ButtonInstall.Enabled = False
-        Me.ButtonInstall.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.ButtonInstall.Location = New System.Drawing.Point(13, 226)
+        Me.ButtonInstall.Font = New System.Drawing.Font("Verdana", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.ButtonInstall.Location = New System.Drawing.Point(13, 216)
         Me.ButtonInstall.Name = "ButtonInstall"
-        Me.ButtonInstall.Size = New System.Drawing.Size(306, 23)
+        Me.ButtonInstall.Size = New System.Drawing.Size(306, 33)
         Me.ButtonInstall.TabIndex = 7
         Me.ButtonInstall.Text = "INSTALL"
         Me.ButtonInstall.UseVisualStyleBackColor = True

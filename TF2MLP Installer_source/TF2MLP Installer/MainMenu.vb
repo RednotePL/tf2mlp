@@ -13,7 +13,7 @@
 
     Private Sub OpenFolderDialog_Click(sender As Object, e As EventArgs) Handles OpenFolderDialog.Click
         SelectTF2Instalation.ShowDialog()
-        If SelectTF2Instalation.SelectedPath.Contains("tf\custom") Then
+        If SelectTF2Instalation.SelectedPath.Contains("Team Fortress 2\tf\custom") Then
             PathInCorrectText.Visible = False
             PathCorrectText.Visible = True
 
@@ -27,6 +27,22 @@
     End Sub
 
     Private Sub ButtonInstall_Click(sender As Object, e As EventArgs) Handles ButtonInstall.Click
+
+        ButtonInstall.Enabled = False
+
+        If (FullInstallBtn.Checked = True) Then
+            FullInstall()
+        End If
+        If (MinimalInstallBtn.Checked = True) Then
+            MinimalInstall()
+        End If
+    End Sub
+
+    Public Sub FullInstall()
+
+    End Sub
+
+    Public Sub MinimalInstall()
 
     End Sub
 End Class
