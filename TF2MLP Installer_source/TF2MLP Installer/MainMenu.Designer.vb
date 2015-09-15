@@ -32,6 +32,7 @@ Partial Class MainMenu
         Me.PathInCorrectText = New System.Windows.Forms.Label()
         Me.ButtonInstall = New System.Windows.Forms.Button()
         Me.TimerCheckEnabled = New System.Windows.Forms.Timer(Me.components)
+        Me.InstallationProgressBar = New System.Windows.Forms.ProgressBar()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -121,11 +122,20 @@ Partial Class MainMenu
         '
         Me.TimerCheckEnabled.Enabled = True
         '
+        'InstallationProgressBar
+        '
+        Me.InstallationProgressBar.Location = New System.Drawing.Point(13, 147)
+        Me.InstallationProgressBar.Name = "InstallationProgressBar"
+        Me.InstallationProgressBar.Size = New System.Drawing.Size(306, 23)
+        Me.InstallationProgressBar.TabIndex = 8
+        Me.InstallationProgressBar.Visible = False
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(331, 261)
+        Me.Controls.Add(Me.InstallationProgressBar)
         Me.Controls.Add(Me.ButtonInstall)
         Me.Controls.Add(Me.PathInCorrectText)
         Me.Controls.Add(Me.PathCorrectText)
@@ -153,4 +163,5 @@ Partial Class MainMenu
     Friend WithEvents PathInCorrectText As Label
     Friend WithEvents ButtonInstall As Button
     Friend WithEvents TimerCheckEnabled As Timer
+    Friend WithEvents InstallationProgressBar As ProgressBar
 End Class

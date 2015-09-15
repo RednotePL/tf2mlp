@@ -46,19 +46,25 @@
 
         'pi.Arguments = "https://github.com/SuperStarPL/tf2mlp/raw/master/sspl_mlp_dir.vpk"
 
-        Dim pi As New ProcessStartInfo("wget.exe", "https://github.com/SuperStarPL/tf2mlp/raw/dev/sspl_mlp_dir.vpk --no-check-certificate")
-        Dim pi2 As New ProcessStartInfo("wget.exe", "https://github.com/SuperStarPL/tf2mlp/raw/dev/.vpk --no-check-certificate")
+        'Dim wget As New ProcessStartInfo("wget.exe", "https://github.com/SuperStarPL/tf2mlp/raw/dev/sspl_mlp_dir.vpk --no-check-certificate")
+        'Dim wget2 As New ProcessStartInfo("wget.exe", "https://github.com/SuperStarPL/tf2mlp/raw/dev/Installer/7za.exe --no-check-certificate")
 
-        'Dim pi As New ProcessStartInfo("wget.exe", "http://dev.superstar.pl:82/minimal.7z --no-check-certificate")
+        Dim wget As New ProcessStartInfo("wget.exe", "http://dev.superstar.pl:82/minimal.7z --no-check-certificate")
 
-        'Dim pi2 As New ProcessStartInfo("wget.exe", "http://dev.superstar.pl:82/sound.7z --no-check-certificate")
+        Dim wget2 As New ProcessStartInfo("wget.exe", "http://dev.superstar.pl:82/sound.7z --no-check-certificate")
 
+        Dim sevenza As New ProcessStartInfo("7za.exe", "e minimal.7z -otemp -y")
 
-        Process.Start(pi).WaitForExit()
-
-        Process.Start(pi2).WaitForExit()
-
-        'Process.Start(Application.StartupPath & "wget.exe", "") As Process
+        InstallationProgressBar.Visible = True
+        InstallationProgressBar.Value = 10
+        Process.Start(wget).WaitForExit()
+        InstallationProgressBar.Value = 20
+        ' Process.Start(wget2).WaitForExit()
+        InstallationProgressBar.Value = 30
+        Process.Start(sevenza).WaitForExit()
+        InstallationProgressBar.Value = 50
+        My.Computer.FileSystem.MoveDirectory(Application.StartupPath & "\temp", SelectTF2Instalation.SelectedPath)
+        InstallationProgressBar.Value = 99
     End Sub
 
     Public Sub MinimalInstall()
