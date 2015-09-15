@@ -4,6 +4,7 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FullInstallBtn.Checked = True
+        MinimalInstallBtn.Enabled = False
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
@@ -45,8 +46,17 @@
 
         'pi.Arguments = "https://github.com/SuperStarPL/tf2mlp/raw/master/sspl_mlp_dir.vpk"
 
-        Dim pi As New ProcessStartInfo("wget.exe", "https://github.com/SuperStarPL/tf2mlp/raw/master/sspl_mlp_dir.vpk --no-check-certificate")
-        Process.Start(pi)
+        Dim pi As New ProcessStartInfo("wget.exe", "https://github.com/SuperStarPL/tf2mlp/raw/dev/sspl_mlp_dir.vpk --no-check-certificate")
+        Dim pi2 As New ProcessStartInfo("wget.exe", "https://github.com/SuperStarPL/tf2mlp/raw/dev/.vpk --no-check-certificate")
+
+        'Dim pi As New ProcessStartInfo("wget.exe", "http://dev.superstar.pl:82/minimal.7z --no-check-certificate")
+
+        'Dim pi2 As New ProcessStartInfo("wget.exe", "http://dev.superstar.pl:82/sound.7z --no-check-certificate")
+
+
+        Process.Start(pi).WaitForExit()
+
+        Process.Start(pi2).WaitForExit()
 
         'Process.Start(Application.StartupPath & "wget.exe", "") As Process
     End Sub
