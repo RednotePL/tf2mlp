@@ -1,8 +1,5 @@
 c:\users\superstarpl\documents\visual studio 2015\Projects\TF2MLP Installer\TF2MLP Installer\bin\Debug\TF2MLP Installer.exe.config
 C:\GitHub\tf2mlp\TF2MLP Installer\TF2MLP Installer\bin\Debug\TF2MLP Installer.exe.config
-C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP_Installer.MainMenu.resources
-C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP_Installer.Resources.resources
-C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP Installer.vbproj.GenerateResource.Cache
 C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\bin\Debug\7za.exe
 C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\bin\Debug\7zxa.dll
 C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\bin\Debug\wget.exe
@@ -10,6 +7,10 @@ C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\bin\Debug\TF2MLP Insta
 C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\bin\Debug\TF2MLP Installer.exe
 C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\bin\Debug\TF2MLP Installer.pdb
 C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\bin\Debug\TF2MLP Installer.xml
+C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP Installer.vbprojResolveAssemblyReference.cache
+C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP_Installer.MainMenu.resources
+C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP_Installer.Resources.resources
+C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP Installer.vbproj.GenerateResource.Cache
 C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP Installer.exe
 C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP Installer.xml
 C:\GitHub\tf2mlp\TF2MLP Installer_source\TF2MLP Installer\obj\Debug\TF2MLP Installer.pdb
