@@ -62,7 +62,7 @@ Partial Class MainMenu
         Me.GroupBox1.Controls.Add(Me.FullInstallBtn)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 41)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(307, 67)
+        Me.GroupBox1.Size = New System.Drawing.Size(310, 67)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Select Installation:"
@@ -113,7 +113,7 @@ Partial Class MainMenu
         Me.ButtonInstall.Font = New System.Drawing.Font("Verdana", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
         Me.ButtonInstall.Location = New System.Drawing.Point(13, 216)
         Me.ButtonInstall.Name = "ButtonInstall"
-        Me.ButtonInstall.Size = New System.Drawing.Size(306, 33)
+        Me.ButtonInstall.Size = New System.Drawing.Size(309, 33)
         Me.ButtonInstall.TabIndex = 7
         Me.ButtonInstall.Text = "INSTALL"
         Me.ButtonInstall.UseVisualStyleBackColor = True
@@ -126,7 +126,7 @@ Partial Class MainMenu
         '
         Me.InstallationProgressBar.Location = New System.Drawing.Point(13, 147)
         Me.InstallationProgressBar.Name = "InstallationProgressBar"
-        Me.InstallationProgressBar.Size = New System.Drawing.Size(306, 23)
+        Me.InstallationProgressBar.Size = New System.Drawing.Size(309, 23)
         Me.InstallationProgressBar.TabIndex = 8
         Me.InstallationProgressBar.Visible = False
         '
@@ -134,7 +134,7 @@ Partial Class MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(331, 261)
+        Me.ClientSize = New System.Drawing.Size(334, 261)
         Me.Controls.Add(Me.InstallationProgressBar)
         Me.Controls.Add(Me.ButtonInstall)
         Me.Controls.Add(Me.PathInCorrectText)
