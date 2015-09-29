@@ -26,6 +26,7 @@ Partial Class MainMenu
         Me.FullInstallBtn = New System.Windows.Forms.RadioButton()
         Me.MinimalInstallBtn = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.CustomInstallBtn = New System.Windows.Forms.RadioButton()
         Me.SelectTF2Instalation = New System.Windows.Forms.FolderBrowserDialog()
         Me.OpenFolderDialog = New System.Windows.Forms.Button()
         Me.PathCorrectText = New System.Windows.Forms.Label()
@@ -49,7 +50,7 @@ Partial Class MainMenu
         'MinimalInstallBtn
         '
         Me.MinimalInstallBtn.AutoSize = True
-        Me.MinimalInstallBtn.Location = New System.Drawing.Point(6, 38)
+        Me.MinimalInstallBtn.Location = New System.Drawing.Point(6, 43)
         Me.MinimalInstallBtn.Name = "MinimalInstallBtn"
         Me.MinimalInstallBtn.Size = New System.Drawing.Size(167, 17)
         Me.MinimalInstallBtn.TabIndex = 2
@@ -58,14 +59,25 @@ Partial Class MainMenu
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.CustomInstallBtn)
         Me.GroupBox1.Controls.Add(Me.MinimalInstallBtn)
         Me.GroupBox1.Controls.Add(Me.FullInstallBtn)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 41)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(310, 67)
+        Me.GroupBox1.Size = New System.Drawing.Size(310, 88)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Select Installation:"
+        '
+        'CustomInstallBtn
+        '
+        Me.CustomInstallBtn.AutoSize = True
+        Me.CustomInstallBtn.Location = New System.Drawing.Point(6, 66)
+        Me.CustomInstallBtn.Name = "CustomInstallBtn"
+        Me.CustomInstallBtn.Size = New System.Drawing.Size(69, 17)
+        Me.CustomInstallBtn.TabIndex = 3
+        Me.CustomInstallBtn.Text = "Custom"
+        Me.CustomInstallBtn.UseVisualStyleBackColor = True
         '
         'SelectTF2Instalation
         '
@@ -124,7 +136,7 @@ Partial Class MainMenu
         '
         'InstallationProgressBar
         '
-        Me.InstallationProgressBar.Location = New System.Drawing.Point(13, 147)
+        Me.InstallationProgressBar.Location = New System.Drawing.Point(13, 163)
         Me.InstallationProgressBar.Name = "InstallationProgressBar"
         Me.InstallationProgressBar.Size = New System.Drawing.Size(309, 23)
         Me.InstallationProgressBar.TabIndex = 8
@@ -164,4 +176,5 @@ Partial Class MainMenu
     Friend WithEvents ButtonInstall As Button
     Friend WithEvents TimerCheckEnabled As Timer
     Friend WithEvents InstallationProgressBar As ProgressBar
+    Friend WithEvents CustomInstallBtn As RadioButton
 End Class

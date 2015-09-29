@@ -5,6 +5,7 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FullInstallBtn.Checked = True
         MinimalInstallBtn.Enabled = False
+        CustomInstallBtn.Enabled = False
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
@@ -65,6 +66,9 @@
         InstallationProgressBar.Value = 50
         My.Computer.FileSystem.MoveDirectory(Application.StartupPath & "\temp", SelectTF2Instalation.SelectedPath)
         InstallationProgressBar.Value = 99
+        DoneDialog.Show()
+        InstallationProgressBar.Value = 100
+
     End Sub
 
     Public Sub MinimalInstall()
